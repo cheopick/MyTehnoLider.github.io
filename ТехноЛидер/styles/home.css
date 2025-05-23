@@ -1,0 +1,133 @@
+/* Параллакс эффект для баннера */
+.banner {
+    position: relative;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+.parallax-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images/кек.jpg') center/cover no-repeat;
+    z-index: -1;
+    transform: translateZ(-1px) scale(1.2);
+}
+
+.banner h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.banner p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Преимущества */
+.advantages {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.advantages-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.advantage {
+    text-align: center;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.advantage:hover {
+    transform: translateY(-10px);
+}
+
+.advantage i {
+    font-size: 3rem;
+    color: #3498db;
+    margin-bottom: 20px;
+}
+
+.advantage h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+/* Интерактивная кнопка */
+.interactive {
+    padding: 60px 0;
+    text-align: center;
+}
+
+#interactive-btn {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#interactive-btn:hover {
+    background: #2980b9;
+    transform: scale(1.05);
+}
+
+/* Контакты */
+.contacts-preview {
+    padding: 60px 0;
+    background: #3498db;
+    color: white;
+}
+
+.contacts-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.contact-item:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+.contact-item i {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contact-item p {
+    font-size: 1.2rem;
+    text-align: center;
+}
